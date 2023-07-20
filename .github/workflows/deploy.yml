@@ -21,6 +21,8 @@ jobs:
       - name: Install required packages
         run: pip install -r requirements.txt
       - name: Synth stack
+        run: cdk bootstrap
+      - name: Synth stack
         run: cdk synth
       - name: Deploy stack
         run: cdk deploy --all --require-approval never
