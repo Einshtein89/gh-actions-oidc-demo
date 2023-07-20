@@ -14,8 +14,8 @@ jobs:
       - name: Configure AWS credentials from Test account
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          role-to-assume: arn:aws:iam::1234567890:role/gh-actions-role
-          aws-region: us-east-1
+          role-to-assume: arn:aws:iam::941663359354:role/gh-actions-role
+          aws-region: eu-central-1
       - name: Install dependencies
         run: npm install -g aws-cdk
       - name: Install required packages
